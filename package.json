@@ -2,7 +2,7 @@
   "name": "ecommerce-root",
   "private": true,
   "scripts": {
-    "install": "cd front-end && npm install",
+    "install": "cd front-end && npm install --legacy-peer-deps",
     "build": "cd front-end && npm run build"
   }
 }
