@@ -14,7 +14,8 @@ body {
 }
 
 .wrapper {
-  background: linear-gradient(135deg, #080f20 0%, #0c1c3e 100%);
+  background: url('../home.jpg') no-repeat center center fixed;
+  background-size: cover;
   width: 100%;
   min-height: 100vh;
   padding: 20px;
