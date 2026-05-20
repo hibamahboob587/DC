@@ -1,6 +1,5 @@
 import "../Style/NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import profileHeaderImg from "../assets/profile-header.jpg";
 
 function NavBar() {
   const handleLogout = () => {
@@ -25,11 +24,7 @@ function NavBar() {
                 <li><a href="/">Home</a></li>
                 <li><a href="/cart">Cart</a></li>
                 <li><a href="/subscription">Subscription</a></li>
-                <li>
-                  <a href="/profile">
-                    Profile <img src={profileHeaderImg} alt="" />
-                  </a>
-                </li>
+                <li><a href="/profile">Profile</a></li>
                 <li>
                   <a href="#" onClick={(e) => { e.preventDefault(); handleLogout(); }} className="logout-link">
                     Logout
