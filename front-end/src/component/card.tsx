@@ -12,19 +12,19 @@ const Card = ({ name, price, imgsrc, category }: Props) => {
   const [imgFailed, setImgFailed] = useState(false);
 
   return (
-    <div className="item">
-      {imgsrc && !imgFailed ? (
-        <img src={imgsrc} alt={name} onError={() => setImgFailed(true)} />
-      ) : (
-        <div className="no-image">NO IMAGE AVAILABLE</div>
-      )}
-      <h4>{name}</h4>
-      <p>{category}</p>
-      <ul>
-        <li>
-          <i className="fa fa-dollar-sign">{price}</i>
-        </li>
-      </ul>
+    <div className="manga-card">
+      <div className="manga-card-img-wrap">
+        {imgsrc && !imgFailed ? (
+          <img src={imgsrc} alt={name} onError={() => setImgFailed(true)} />
+        ) : (
+          <div className="no-image">NO IMAGE AVAILABLE</div>
+        )}
+        <span className="manga-price-badge">${price}</span>
+      </div>
+      <div className="manga-card-info">
+        <h4 className="manga-card-title">{name}</h4>
+        <p className="manga-card-category">{category}</p>
+      </div>
     </div>
   );
 };

@@ -2,12 +2,12 @@
 
 .header-area {
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   height: 70px;
   top: 15px;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   transition: all .5s ease 0s;
 }
@@ -23,12 +23,13 @@
 .header-area .main-nav {
   min-height: 80px;
   width: 100%;
-  background-color: #0c1c3e;
-  opacity: 0.96;
+  background-color: #0a1830;
+  opacity: 0.97;
   display: flex;
   padding: 15px 7px;
   border-radius: 15px;
-  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(59, 130, 246, 0.05);
 }
 
 .background-header .main-nav {
